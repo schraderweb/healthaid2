@@ -47,7 +47,6 @@ const showText4 = () => {
     }
 }
 const showText3 = () => {
-    
     loading3.style.display = "block";
     setTimeout(() => {
         console.log('Foo bar1');
@@ -56,7 +55,6 @@ const showText3 = () => {
       }, 1000)
 }
 const showText2 = () => {
-    
     loading2.style.display = "block";
     setTimeout(() => {
         console.log('Foo bar1');
@@ -83,28 +81,21 @@ q1BtnYes.addEventListener("click", () => {
 });
 q1BtnNo.addEventListener("click", () => {
     q1Btn.style.display = "none";
-    q2Btn.style.display = "block";
+    q2Btn.style.display = "none";
     q2Btn.classList.add("fade-in");
     loading1.classList.add("fade-out");
     choiceUnder = false;
+    showText1();
 });
 
 q2BtnYes.addEventListener("click", () => {
     q2Btn.style.display = "none";
-    choiceMedical = true;
+    choiceMedical = false;
     showText1();
 });
 q2BtnNo.addEventListener("click", () => {
     q2Btn.style.display = "none";
     choiceMedical = false;
+    choiceUnder = false
     showText1();
 });
-
-
-
-
-
-
-
-
-
