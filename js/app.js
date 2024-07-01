@@ -37,8 +37,6 @@ function startTimer() {
 }
 
 const showText4 = () => {
-
-  //&& choiceUnder == true
     if(choiceUnder == true  ) {
         var timerInterval = setInterval(startTimer, 1000);
         document.getElementById("qualify").style.display = "block";
@@ -63,7 +61,6 @@ const showText2 = () => {
       }, 1000)
 }
 const showText1 = () => {
-    
     loading1.style.display = "block";
     setTimeout(() => {
         console.log('Foo bar');
