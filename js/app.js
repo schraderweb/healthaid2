@@ -71,7 +71,7 @@ const showText1 = () => {
 
 q1BtnYes.addEventListener("click", () => {
     q1Btn.style.display = "none";
-    choiceMedical = false;
+    choiceUnder = false;
     showText1();
 });
 q1BtnNo.addEventListener("click", () => {
