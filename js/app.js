@@ -72,6 +72,7 @@ const showText1 = () => {
 q1BtnYes.addEventListener("click", () => {
     q1Btn.style.display = "none";
     q2Btn.style.display = "none";
+      loading1.classList.add("fade-out");
     choiceUnder = false;
     showText1();
 });
