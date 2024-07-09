@@ -73,12 +73,11 @@ const showText1 = () => {
 }
 
 q1BtnYes.addEventListener("click", () => {
-    q1Btn.style.display = "none";
-    q2Btn.style.display = "none";
-      loading1.classList.add("fade-out");
-    choiceUnder = false;
+      q2Btn.style.display = "none";
+    choiceMedical = false;
     showText1();
 });
+
 q1BtnNo.addEventListener("click", () => {
     q1Btn.style.display = "none";
     q2Btn.style.display = "none";
