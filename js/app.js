@@ -39,7 +39,22 @@ function startTimer() {
   timerElement.textContent = minutes + ':' + seconds;
 }
 
-
+const showText4 = () => {
+    if(choiceUnder == true  ) {
+        var timerInterval = setInterval(startTimer, 1000);
+        document.getElementById("qualify").style.display = "block";
+    }else {
+        document.getElementById("dontqualify").style.display = "block";
+    }
+}
+const showText3 = () => {
+    loading3.style.display = "block";
+    setTimeout(() => {
+        console.log('Foo bar1');
+        loading3.style.display = "none";
+        showText4();
+      }, 1000)
+}
 const showText2 = () => {
     loading2.style.display = "block";
     setTimeout(() => {
@@ -65,10 +80,26 @@ q1BtnYes.addEventListener("click", () => {
     showText1();
 });
 q1BtnNo.addEventListener("click", () => {
+    q1Btn.style.display = "none";
+    q2Btn.style.display = "none";
+    q2Btn.classList.add("fade-in");
+    loading1.classList.add("fade-out");
+    choiceUnder = false;
+    showText1();
+});
+
+q2BtnYes.addEventListener("click", () => {
+    q2Btn.style.display = "none";
+    choiceMedical = false;
+    choiceUnder = false
+    showText1();
+});
+q2BtnNo.addEventListener("click", () => {
     q2Btn.style.display = "none";
     choiceMedical = false;
     showText1();
 });
+
 
 
 
