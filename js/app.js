@@ -85,19 +85,6 @@ q1BtnNo.addEventListener("click", () => {
     showText1();
 });
 
-q2BtnYes.addEventListener("click", () => {
-    q2Btn.style.display = "none";
-    choiceMedical = false;
-    choiceUnder = false
-    showText1();
-});
-q2BtnNo.addEventListener("click", () => {
-    q2Btn.style.display = "none";
-    choiceMedical = false;
-    showText1();
-});
-
-
 
 
 /*  Original JS
