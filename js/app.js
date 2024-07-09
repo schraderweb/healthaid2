@@ -100,7 +100,7 @@ q2BtnNo.addEventListener("click", () => {
 
 
 
-<!--  Original JS
+/*  Original JS
 
 q1BtnYes.addEventListener("click", () => {
     q1Btn.style.display = "none";
@@ -131,4 +131,4 @@ q2BtnNo.addEventListener("click", () => {
 });
 
 
--->
+//
