@@ -73,7 +73,9 @@ const showText1 = () => {
 }
 
 q1BtnYes.addEventListener("click", () => {
-      q2Btn.style.display = "none";
+         q1Btn.style.display = "none";
+q2Btn.style.display = "none";
+      q2Btn.classList.add("fade-out");
     choiceMedical = false;
     showText1();
 });
