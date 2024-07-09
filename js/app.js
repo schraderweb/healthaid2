@@ -71,6 +71,7 @@ const showText1 = () => {
 
 q1BtnYes.addEventListener("click", () => {
     q1Btn.style.display = "none";
+    q2Btn.style.display = "none";
     choiceUnder = false;
     showText1();
 });
