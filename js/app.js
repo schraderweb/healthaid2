@@ -39,22 +39,7 @@ function startTimer() {
   timerElement.textContent = minutes + ':' + seconds;
 }
 
-const showText4 = () => {
-    if(choiceUnder == true  ) {
-        var timerInterval = setInterval(startTimer, 1000);
-        document.getElementById("qualify").style.display = "block";
-    }else {
-        document.getElementById("dontqualify").style.display = "block";
-    }
-}
-const showText3 = () => {
-    loading3.style.display = "block";
-    setTimeout(() => {
-        console.log('Foo bar1');
-        loading3.style.display = "none";
-        showText4();
-      }, 1000)
-}
+
 const showText2 = () => {
     loading2.style.display = "block";
     setTimeout(() => {
