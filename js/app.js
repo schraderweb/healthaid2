@@ -74,7 +74,9 @@ q1BtnYes.addEventListener("click", () => {
     q2Btn.style.display = "block";
     q1Btn.classList.add("fade-in");
     q2Btn.classList.add("fade-out");
-    choiceUnder = true;
+    choiceMedical = false;
+    showText1();
+  choiceUnder = true;
 });
 q1BtnNo.addEventListener("click", () => {
     q1Btn.style.display = "none";
@@ -96,3 +98,39 @@ q2BtnNo.addEventListener("click", () => {
     choiceMedical = false;
     showText1();
 });
+
+
+
+
+<!--  Original JS
+
+q1BtnYes.addEventListener("click", () => {
+    q1Btn.style.display = "none";
+    q2Btn.style.display = "block";
+    q1Btn.classList.add("fade-in");
+    q2Btn.classList.add("fade-out");
+  choiceUnder = true;
+});
+q1BtnNo.addEventListener("click", () => {
+    q1Btn.style.display = "none";
+    q2Btn.style.display = "none";
+    q2Btn.classList.add("fade-in");
+    loading1.classList.add("fade-out");
+    choiceUnder = false;
+    showText1();
+});
+
+q2BtnYes.addEventListener("click", () => {
+    q2Btn.style.display = "none";
+    choiceMedical = false;
+    choiceUnder = false
+    showText1();
+});
+q2BtnNo.addEventListener("click", () => {
+    q2Btn.style.display = "none";
+    choiceMedical = false;
+    showText1();
+});
+
+
+-->
