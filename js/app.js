@@ -78,7 +78,6 @@ q1BtnYes.addEventListener("click", () => {
     q1Btn.classList.add("fade-in");
     q2Btn.classList.add("fade-out");
     choiceMedical = false;
-    showText1();
   choiceUnder = true;
 });
 
