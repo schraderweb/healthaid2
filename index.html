@@ -46,13 +46,6 @@
     window.Offer18WebSDK.initializeConversion('click_id');
 </script>
     <script src="https://web-resources.offer18.net/sdk/web/WebSDK.js"></script>
-    <script>
-    window.Offer18WebSDK.trackConversion({
-        domain: 'ejhinc10254287.o18a.com',
-        accountId: '23881',
-        offerId: '21442258',
-    })
-</script>
 </head>
 <body>
     <header class="header">
@@ -105,6 +98,13 @@
                 <p>Your spot is being held. To get started click the button below to speak to an expert.</p><a
                     id="button" class="call-button" style="animation: pulsing 1.5s infinite" href="tel:+18776373913">Click here to call and get your FREE Health Insurance!</a> 
                 <h3>Your spot is being held for <span id="timer" class="countdown">4:00</span></h3>
+                 <script>
+    window.Offer18WebSDK.trackConversion({
+        domain: 'ejhinc10254287.o18a.com',
+        accountId: '23881',
+        offerId: '21442258',
+    })
+</script>
             </div>
             <div id="dontqualify" class="boxme" style="display: none">
                 <p class="greatnews"><strong>Congratulations! You're Eligible For Governement Subsidies To Apply To Your Health Coverage!</strong></p>
