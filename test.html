@@ -191,13 +191,12 @@
     //the widget will be loaded into a div with id="qsWidgetContainer".  
     sh.initialize(matchingConfiguration, "qsWidgetContainer");
     onclick='_mgq.push(["MgSensorInvoke", "insure_click"])'
-</script>
 
-<script>
-document.addEventListener('DOMContentLoaded', function () {
+    document.addEventListener('DOMContentLoaded', function () {
     // Get all elements with the class "sh-cta-button"
     var elements = document.getElementsByClassName("sh-cta-button");
 
+    console.log("widget loaded");
     console.log(elements);
     
     // Loop through each element
@@ -209,6 +208,12 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+</script>
+
+<script>
+console.log("hi");
+    
+
 
 </script>
 
