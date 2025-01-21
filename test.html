@@ -194,17 +194,20 @@
 </script>
 
 <script>
-    
+document.addEventListener('DOMContentLoaded', function () {
     // Get all elements with the class "sh-cta-button"
-var elements = document.getElementsByClassName("sh-cta-button");
+    var elements = document.getElementsByClassName("sh-cta-button");
 
-// Loop through each element
-for (var i = 0; i < elements.length; i++) {
-    // Add a click event listener to each element
-    elements[i].addEventListener('click', function() {
-        // Open the thank you page in a new tab
-        window.open('ty2.html', '_blank');
-    })}
+    // Loop through each element
+    for (var i = 0; i < elements.length; i++) {
+        // Add a click event listener to each element
+        elements[i].addEventListener('click', function () {
+            // Open the thank you page in a new tab
+            window.open('ty2.html', '_blank');
+        });
+    }
+});
+
 </script>
 
 </body>
