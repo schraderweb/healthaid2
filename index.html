@@ -18,9 +18,6 @@
 </script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16447071473"></script>
 <script>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16447071473"></script>
-<script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
@@ -42,10 +39,13 @@
   gtag('config', 'G-E4RLSFE6JB');
 </script>     
 <script type="text/javascript" src="//www.nextinsure.com/listingdisplay/loader/sh"></script> 
-    <script>
-    window.Offer18WebSDK.initializeConversion('click_id');
-</script>
-    <script src="https://web-resources.offer18.net/sdk/web/WebSDK.js"></script>
+
+<style>
+  .widget-hero { margin: 1rem auto 1.75rem; padding: .75rem; background:#f5f9fd; border:1px solid #d6e6f3; border-radius:14px; min-height:220px; }
+  @media (max-width:600px) { .widget-hero { margin-left:-.5rem; margin-right:-.5rem; padding:.5rem; } }
+  .call-box { margin: 1.5rem 0 1rem; text-align:center; }
+  .agent-call { display:block; text-decoration:none; color:#fff; font-weight:700; font-size:1.15rem; line-height:1.3; padding:1rem 1.25rem; border-radius:12px; background:linear-gradient(#49b74e,#388e3c); box-shadow:0 6px 16px rgba(56,142,60,.35); }
+</style>
 </head>
 <body>
     <header class="header">
@@ -61,6 +61,9 @@
             <div class="review-css">&nbsp;</div>
             <h1 style="text-align: center;">Americans Could Receive Premium Credits From the Government for Health Insurance and You
                 Can Check In 2 Minutes Below.</h1>
+            <div class="widget-hero" id="compare">
+                <div id="qsWidgetContainer"></div>
+            </div>
             <picture> <img width="768" height="472" class="img" alt="" src="imgs/pic.jpeg"> </picture>
             <p>Low income Americans may qualify for Low Cost Health Insurance with <strong><span
                         style="color:#167cb9;">Government Credits</span></strong> to pay for
@@ -70,55 +73,15 @@
             <p>Americans may be <span style="color: #167cb9; font-weight: 700;">qualified</span> for these Government
                 Credits and don't even know.</p>
             <p>It's <span style="color: #167cb9; font-weight: 700;">easy</span> and totally <span
-                    style="color: #167cb9; font-weight: 700;">free</span> to check eligibility. Take the short quiz
-                below and speak with a representative to claim your benefits.</p>
-            <div class="question" id="q1">
-                <h2>Do you make under $50,000 per year?</h2>
-                <div class="button q1-btn q1-btn-yes">Yes</div>
-                <div class="button q1-btn q1-btn-no">No</div>
-            </div>
-            <div class="question" id="q2">
-                <h2>Are you on Medicaid or Medicare?</h2>
-                <div class="button q2-btn q2-btn-yes ">Yes</div>
-                <div class="button q2-btn q2-btn-no ">No</div>
-            </div>
-            <div id="loading1" class="loading boxme">
-                <h3>Reviewing Your Answers</h3>
-            </div>
-            <div id="loading2" class="loading boxme">
-                <h3>Searching Your State's Coverage</h3>
-            </div>
-            <div id="loading3" class="loading boxme">
-                <h3>Confirming Eligibility</h3>
-            </div>
-            <div id="qualify" class="boxme">
-                <h5>Congratulations!</h5>
-                <p>You May Pre-Qualify for <span style="color: red; font-weight: 700;">Monthly</span> <span
-                        style="color: #167cb9; font-weight: 700;">Premium Health Credits</span></p>
-                <p>Your spot is being held. To get started click the button below to speak to an expert.</p><a
-                    id="button" class="call-button" onclick="window.open('ty1.html', '_blank')"
-                    style="animation: pulsing 1.5s infinite" href="tel:+18776373913">Click here to speak to an agent now about your $0 Health plan!</a> 
-                <h3>Your spot is being held for <span id="timer" class="countdown">4:00</span></h3>
-                 <script>
-    window.Offer18WebSDK.trackConversion({
-        domain: 'ejhinc10254287.o18a.com',
-        accountId: '23881',
-        offerId: '21442258',
-    })
-</script>
-            </div>
-            <div id="dontqualify" class="boxme" style="display: none">
-                <p class="greatnews"><strong>Congratulations! You're Eligible For Governement Subsidies To Apply To Your Health Coverage!</strong></p>
-                <p>Fill Out the Fields Below and Claim Before Its Too Late!
-                </p>
-                <div id="qsWidgetContainer"></div>
+                    style="color: #167cb9; font-weight: 700;">free</span> to check eligibility. Compare plans above or speak with a representative below to claim your benefits.</p>
+            <div class="call-box">
+                <a class="call-button agent-call" href="tel:+18776373913">Don't want to wait? Click here to speak to a licensed agent now</a>
             </div>
             <hr class="divider">
         </section>
     </div>
     <footer>
         <div class="container">
-              <div id="qsWidgetContainer"></div>
             <p class="copyright">© 2024 SubsidizedHealthCare.net </p>
             <p class="copyright" style="padding-top: 10px;">Fact Checks</p>
             <div class="copyright" style="font-size: 15px;">
@@ -153,47 +116,65 @@
         </div>
     </footer>
 
-<script src="/js/app.js"></script>
 <script>
     //see it working https://jsfiddle.net/surehits/02jrwq7s/
     //Remove the "QA.Test" value from the var1 variable before going live, it will scrub your traffic.  QA.Test tells us you are testing.
     
-    var matchingConfiguration = {
-   	 "src": "693891",
-   	 "inventorytype":"health-grid-incontent",
-   	 "zipcode": "94404",
-   	 "statecode": "CA",
-   	 "var1": "subid 1",
-   	 "var2": "subid 2",
-   	 "var3": "subid 3",
-   	 "trn_id": "transactionId",
-   	 "leadid": "",
-   	 "coveragetype":    "Medicare",
-   	 "householdsize":"4",
-   	 "age": "38",
-   	 "creditrating": "Excellent",
-   	 "currentlyinsured": "1",
-   	 "education": "Bachelor",
-   	 "gender": "M",
-   	 "homeowner": "1",
-   	 "married": "0",
-   	 "military": "1",
-   	 "occupation": "Professor",
-   	 "medicalcondition":"0",
-   	 "height":"65",
-   	 "weight":"170",
-   	 "tobacco":"0",
-   	 "session_ref":    "referring url of user's session",
-   	 "lp_url":"landing page of user",
-   	 "ext_click_id": "abcdefg12345678"
-    };
-    
-    //the widget will be loaded into a div with id="qsWidgetContainer".  
-    sh.initialize(matchingConfiguration, "qsWidgetContainer");
-    onclick='_mgq.push(["MgSensorInvoke", "insure_click"])'
+    // Listing widget: real visitor location + traffic source tracking (was hard-coded sample data: San Mateo CA, age 38, "Professor").
+    (function () {
+      var q = new URLSearchParams(location.search);
+      var cfg = {
+        "src": "693891",
+        "inventorytype": "health-grid-incontent",
+        "coveragetype": "Medicare", // value from the partner's sample; the health listings load with it
+        "householdsize": "4",
+        "age": "38",
+        "currentlyinsured": "1",
+        "trn_id": "t" + Date.now().toString(36) + Math.random().toString(36).slice(2, 8),
+        "leadid": "none",
+        "var1": q.get("utm_source") || "direct",
+        "var2": q.get("utm_campaign") || "none",
+        "var3": q.get("utm_content") || "none",
+        "ext_click_id": q.get("nb_cid") || q.get("click_id") || "none",
+        "session_ref": document.referrer || "direct",
+        "lp_url": location.hostname === "localhost" ? "https://subsidizedhealthcare.net/" : location.href
+      };
+      var started = false;
+      function go() { if (started) return; started = true; sh.initialize(cfg, "qsWidgetContainer"); }
+      if (q.get("zip") && q.get("st")) { cfg.zipcode = q.get("zip"); cfg.statecode = q.get("st"); go(); return; } // manual override for testing
+      setTimeout(go, 2500); // never wait longer than this for location
+      fetch("https://ipapi.co/json/").then(function (r) { return r.json(); }).then(function (g) {
+        if (g && g.country === "US" && g.postal) { cfg.zipcode = g.postal; cfg.statecode = g.region_code; }
+      }).catch(function () {}).then(go);
+    })();
 </script>
 
 
+<script>
+  // Anonymous view / scroll / call-tap / listing-click counts -> seniorhomewarranties.com/api/t (page "aca")
+  (function () {
+    var q = new URLSearchParams(location.search);
+    var c = (q.get('utm_campaign') || '') + '_' + (q.get('utm_content') || '');
+    function send(e) {
+      var u = 'https://seniorhomewarranties.com/api/t?e=' + e + '&p=aca&c=' + encodeURIComponent(c);
+      try { if (!navigator.sendBeacon(u)) throw 0; } catch (x) { fetch(u, { mode: 'no-cors', keepalive: true }); }
+    }
+    send('view');
+    var marks = [25, 50, 75, 90], hit = {};
+    addEventListener('scroll', function () {
+      var p = (scrollY + innerHeight) / document.documentElement.scrollHeight * 100;
+      marks.forEach(function (m) { if (p >= m && !hit[m]) { hit[m] = 1; send('scroll' + m); } });
+    }, { passive: true });
+    document.addEventListener('click', function (ev) {
+      var t = ev.target;
+      var tel = t.closest && t.closest('a[href^="tel:"]');
+      if (tel) { send('tap'); window._rgba_tags = window._rgba_tags || []; window._rgba_tags.push({ call_tap: 'agent' }); return; }
+      var w = document.getElementById('qsWidgetContainer');
+      // paid listing clicks = insurer logo, listing title or "Get Quote" (not filters, "More details" or disclosure)
+      if (w && w.contains(t) && (t.closest('.sh-get-quote, .sh-features-title') || (t.tagName === 'IMG' && t.onclick))) send('listing');
+    }, true);
+  })();
+</script>
 </body>
 
 </html>
