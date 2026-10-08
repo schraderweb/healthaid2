@@ -177,6 +177,7 @@
       var tel = t.closest && t.closest('a[href^="tel:"]');
       if (tel) { send('tap'); window._rgba_tags = window._rgba_tags || []; window._rgba_tags.push({ call_tap: 'agent' }); return; }
       var w = document.getElementById('qsWidgetContainer');
+      if (w && w.contains(t) && t.closest('.sh-filterButton')) { send('filter'); return; }
       // paid listing clicks = insurer logo, listing title or "Get Quote" (not filters, "More details" or disclosure)
       if (w && w.contains(t) && (t.closest('.sh-get-quote, .sh-features-title') || (t.tagName === 'IMG' && t.onclick))) send('listing');
     }, true);
