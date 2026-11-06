@@ -51,6 +51,13 @@
 <style>
   .widget-hero { margin: 1rem auto 1.75rem; padding: .75rem; background:#f5f9fd; border:1px solid #d6e6f3; border-radius:14px; min-height:220px; }
   @media (max-width:600px) { .widget-hero { margin-left:-.5rem; margin-right:-.5rem; padding:.5rem; } }
+  /* phones: get the first listing above the fold (headline was 257px tall, filter form 158px) */
+  @media (max-width:600px) {
+    h1 { font-size:1.3rem !important; line-height:1.25 !important; margin:.25rem 0 .5rem !important; }
+    .review-css { display:none; }
+    .widget-hero { margin-top:.5rem; }
+    #qsWidgetContainer .shmktpl-form { display:none !important; }
+  }
   .call-box { margin: 1.5rem 0 1rem; text-align:center; }
   .agent-call { display:block; text-decoration:none; color:#fff; font-weight:700; font-size:1.15rem; line-height:1.3; padding:1rem 1.25rem; border-radius:12px; background:linear-gradient(#49b74e,#388e3c); box-shadow:0 6px 16px rgba(56,142,60,.35); }
 </style>
